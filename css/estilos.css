@@ -42,6 +42,7 @@ h2 {
    font-size: 50px;
    padding: 35px;
    padding-left: 50px;
+   padding-bottom: 40px;
    color: rgb(255, 127, 80);
    font-family: 'Bangers', cursive;
    text-shadow: 2px 2px 5px black;
@@ -106,8 +107,6 @@ header nav {
    float: right;
    margin-top: 90px;
 }
-
-
 /*Fin Header*/
 
 
@@ -168,22 +167,17 @@ header nav {
 
 #contenedor {
    padding-bottom: 50px;
-   box-sizing: border-box;
-   margin: auto;
    width: 100%;
    overflow: auto;
 
 }
-.tapas {
-   float: left;
-   padding-right: 40px;
-   padding-left: 30px;
-}
+
 .subir { 
    font-family: 'Acme', sans-serif;
    font-size: 30px;
    padding: 5px;
    color: rgb(255, 215, 0);
+   text-shadow: 2px 2px 5px black;
    text-decoration: none;
    display: inline-block;   
    background: rgb(255, 127, 80);
@@ -194,121 +188,82 @@ header nav {
    border-radius: 10px;
    clear: both;
 }
-.miniaturas {  
-   border: 2px solid rgb(31, 30, 41);
-   margin: 15px;
+main div ul li a {  
    opacity: 0.5;
-   filter: grayscale(1);
-   padding-left: 10px;  
+   filter: grayscale(1);   
+   padding: 10px; 
 }
-.miniaturas:hover {
+main div ul li a:hover {
    opacity: 0.8;
-   filter: grayscale(0);
-}
-.lineaminiatura {
-   display: inline-block;   
-}
-.discografia {
-   padding-left: 140px;
-}
-.enlace1 {
-   float: right;
-   position: absolute;
-   right: 85px;
-   top: 1120px;
-   z-index: 1;      
-}
-.enlace2 {
-   float: right;
-   position: absolute;
-   right: 80px;
-   top: 1675px;
-   z-index: 1; 
-}
-.enlace3 {
-   float: right;
-   position: absolute;
-   right: 85px;
-   top: 2245px;
-   z-index: 1; 
-}
-.enlace4 {
-   float: right;
-   position: absolute;
-   right: 85px;
-   top: 2750px;
-   z-index: 1; 
-}
-.enlace5 {
-   float: right;
-   position: absolute;
-   right: 85px;
-   top: 3355px;
-   z-index: 1; 
-}
-.enlace6 {
-   float: right;
-   position: absolute;
-   right: 85px;
-   top: 3822px;
-   z-index: 1; 
-}
-.enlace7 {
-   float: right;
-   position: absolute;
-   right: 85px;
-   top: 4380px;
-   z-index: 1; 
-}
-.enlace8 {
-   float: right;
-   position: absolute;
-   right: 85px;
-   top: 4900px;
-   z-index: 1; 
+   filter: grayscale(0);    
 }
 
+main div ul {
+   text-decoration: none;
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;  
+}
+main div ul li {
+   list-style: none;
+}
 
 #pecados {
-   padding-right: 40%;
-   padding-top: 30px;      
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;
 }
 #vivounico {
-   padding-right: 40px;
-   padding-top: 30px;
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;
 }
 #historias {
-   padding-right: 150px;
-   padding-top: 30px;
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;
 }
 #vivogloria {
-   padding-right: 100px;
-   padding-top: 30px;
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;
 }
 #atrapando {
-   padding-right: 120px;
-   padding-top: 30px;
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;
 }
 #culpable {
-   padding-right: 70px;
-   padding-top: 30px;   
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;   
 }
 #descartando {
-   padding-right: 120px;
-   padding-top: 30px;
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;
 }
 #solo {
-   padding-right: 50px;
-   padding-top: 30px;
-}
-section ol li {
-   text-align: center;
-   color: rgb(219, 43, 48);   
+   display: flex;
+   flex-flow: row wrap; 
+   justify-content: space-around;
+   align-content: space-around;
 }
 
-body main section ol {   
-   padding-left: 140px;
-   display: inline-block; 
+div ol li {
+   text-align: center;
+   color: rgb(219, 43, 48);
+   text-shadow: 2px 2px 5px black;
+   display: flex;
+   flex-flow: column wrap;   
 }
 
 /* fin discodrgafia*/
