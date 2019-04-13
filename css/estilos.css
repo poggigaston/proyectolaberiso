@@ -72,6 +72,9 @@ h3 {
    z-index: 4;
    margin-top: 0px;   
 }
+header a img {
+   padding-left: 30px;
+}
 header {
    padding: 5px;   
    /*background-image: url("../img/header4.jpg");   
@@ -150,9 +153,10 @@ header nav {
    width: 60%;
 }
 .parrafo {
+   font-family: 'IBM Plex Mono', monospace;
    width: 80%;   
    padding: 10%;
-   color: rgb(219, 43, 48);
+   color: rgb(226, 98, 102);
    
 }
 /*Fin historia*/
