@@ -37,8 +37,7 @@ h1{
     color: rgb(255, 215, 0);    
 }
 h2 {
-   text-align: center;
-   clear: both;
+   text-align: center;   
    font-size: 50px;
    padding: 35px;
    padding-left: 50px;
@@ -121,38 +120,26 @@ header nav {
 
 /*Inicio*/
 
-.proximos {
-   text-align: right;
-   display: block;
-   color: rgb(255, 215, 0);
-   font-family: 'Bangers', cursive;
-   padding-top: 3%;
-   padding-right: 13%;
+.fondopro {
+   background-image: url("../iconos/shabby-paper-3350613_960_720.png");
+   background-position: left;
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+   background-size: 45%;     
+   height: 550px;
 }
-.proxeven {
-   color: rgb(255, 127, 80);
-   padding-right: 7%;
-   width: 30%;
-   float: right;
-   clear: both;
-   padding-top: 20px;
-   padding-bottom: 20px;
-   font-size: 25px;  
+.fondopro ul {
+   font-family: 'Permanent Marker', cursive;
+   text-align: center;
+   color: rgb(37, 35, 158);
+   font-size: 22px;
+   width: 350px;
+   padding-left: 150px;       
 }
-
-.integ {
+.tituloprox {
    text-align: left;
    color: rgb(255, 215, 0);
-   font-family: 'Bangers', cursive;
-   display: inline;
-   padding-left: 3%;
-   padding-bottom: 150px;
-}
-.fotointe {
-   padding-left: 3%;
-}
-.fotointe {
-   padding-top: 60px;
+   padding-left: 150px;
 }
 
 /*Historia*/
@@ -294,9 +281,6 @@ div ol li {
 .videos {
    padding: 10px;
    padding-bottom: 30px;
-}
-section ul li {
-   display: inline-block;  
 }
 
 /*fin fotos y videos*/
