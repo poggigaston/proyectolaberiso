@@ -57,7 +57,8 @@ h3 {
    background-image: url("../img/fondonuevo2.jpg");   
    background-repeat: no-repeat;
    background-attachment: fixed;
-   background-position: center; 
+   background-position: center;
+   margin-top: -40px;  
 }
 
 /*Fin generales*/
@@ -66,20 +67,27 @@ h3 {
 
 /*Header*/
 
+.bordeheader {
+   position: sticky;
+   top: 27px;
+   z-index: 4;
+   margin-top: 0px;   
+}
 header {
    padding: 5px;   
-   background-image: url("../img/header3.jpg");  
+   /*background-image: url("../img/header4.jpg");   
    background-size: 100%;
    background-attachment: scroll; 
-   background-position: center;
+   background-position: center;*/
+   background: black; 
    position: sticky;
-   top: -90px;
+   top: -67px;
    z-index: 3;
    min-width: 1000px;
    overflow: auto;  
 }
 .logoheader {
-   padding-bottom: 30px;
+   padding-bottom: 10px;
 }
 .seleccion {
    font-size: 33px;
@@ -105,7 +113,7 @@ header nav ul li {
 }
 header nav {
    float: right;
-   margin-top: 90px;
+   margin-top: 60px;
 }
 /*Fin Header*/
 
@@ -317,7 +325,7 @@ main form {
 
 
 /*Footer*/
-.borde {   
+.bordefooter {   
    position: absolute;
    z-index: 4;
    margin-top: -45px;
