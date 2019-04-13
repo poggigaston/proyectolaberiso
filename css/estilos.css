@@ -357,7 +357,7 @@ footer nav {
 
 @keyframes girar_logo {
    0% {
-      transform: rotateY(0deg)
+      transform: rotateY(0deg);
       filter: grayscale(1);
    }
    20% {
@@ -375,8 +375,7 @@ footer nav {
       filter: grayscale(1);      
    }   
    100% {
-      transform: rotateY(360deg);
-      
+      transform: rotateY(360deg);      
    }
 }
 /*Fin Footer*/
