@@ -156,8 +156,11 @@ header nav {
 }
 .parrafo {
    font-family: 'IBM Plex Mono', monospace;
-   width: 80%;   
+   width: 80%;
+   text-align: left;
+   text-justify: auto;  
    padding: 20px;
+   margin-left: 80px;
    color: rgb(226, 98, 102);
    
 }
@@ -280,7 +283,11 @@ div ol li {
 .fotosant ul li:hover {
    opacity: 1;
 }
-
+.videos ul {
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-evenly;
+}
 
 /*fin fotos y videos*/
 
@@ -350,7 +357,7 @@ footer nav {
 @keyframes girar_logo {
    0% {
       transform: rotateY(0deg);
-      filter: grayscale(1);
+      
    }
    20% {
       transform: rotateY(72deg);
@@ -367,7 +374,7 @@ footer nav {
       filter: grayscale(1);      
    }   
    100% {
-      transform: rotateY(360deg);      
+      transform: rotateY(360deg);         
    }
 }
 /*Fin Footer*/
