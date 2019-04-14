@@ -1,4 +1,5 @@
 /*Generales*/
+
 html {
    scroll-behavior: smooth;
    min-width: 1250px;
@@ -57,7 +58,8 @@ h3 {
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center;
-   margin-top: -40px;  
+   margin-top: -40px;
+   margin-bottom: 0;  
 }
 
 /*Fin generales*/
@@ -155,7 +157,7 @@ header nav {
 .parrafo {
    font-family: 'IBM Plex Mono', monospace;
    width: 80%;   
-   padding: 10%;
+   padding: 20px;
    color: rgb(226, 98, 102);
    
 }
@@ -168,24 +170,17 @@ header nav {
    padding-bottom: 50px;
    width: 100%;
    overflow: auto;
-
 }
 
-.subir { 
-   font-family: 'Acme', sans-serif;
-   font-size: 30px;
-   padding: 5px;
-   color: rgb(255, 215, 0);
-   text-shadow: 2px 2px 5px black;
-   text-decoration: none;
+.subir {    
+   color: rgb(255, 215, 0);   
    display: inline-block;   
-   background: rgb(255, 127, 80);
+   background: rgb(67, 67, 83);
    position: fixed;
-   right: 26%;
-   bottom: 2%;
+   right: 33%;   
+   top:600px;   
    z-index: 7;
-   border-radius: 10px;
-   clear: both;
+   border-radius: 20px;   
 }
 main div ul li a {  
    opacity: 0.5;
@@ -197,8 +192,7 @@ main div ul li a:hover {
    filter: grayscale(0);    
 }
 
-main div ul {
-   text-decoration: none;
+main div ul {   
    display: flex;
    flex-flow: row wrap; 
    justify-content: space-around;
@@ -218,7 +212,7 @@ main div ul li {
    display: flex;
    flex-flow: row wrap; 
    justify-content: space-around;
-   align-content: space-around;
+   align-content: space-around;   
 }
 #historias {
    display: flex;
@@ -274,18 +268,19 @@ div ol li {
    padding-left: 47.5%;
    padding-top: 30px;
 }
-
-.fotos {
-   padding: 50px;
-   opacity: 0.5;
+.fotosant ul {
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-evenly;
 }
-.fotos:hover {
+.fotosant ul li {
+   padding: 10px;
+   opacity: 0.5;  
+}
+.fotosant ul li:hover {
    opacity: 1;
 }
-.videos {
-   padding: 10px;
-   padding-bottom: 30px;
-}
+
 
 /*fin fotos y videos*/
 
@@ -316,8 +311,9 @@ main form {
 .bordefooter {   
    position: absolute;
    z-index: 4;
-   margin-top: -45px;
-   clear: both;      
+   margin-top: -40px;
+   min-width: 1200px;
+   overflow: auto;   
 }
 footer {
    /*background-image: url("../img/header.jpg");*/
@@ -328,7 +324,7 @@ footer {
    bottom: 0px;
    z-index: 3;
    min-width: 1000px;
-   clear: both;
+   overflow: auto;   
    border: 0px;
 }
 
