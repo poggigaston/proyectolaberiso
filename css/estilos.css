@@ -2,7 +2,7 @@
 
 html {
    scroll-behavior: smooth;
-   min-width: 1250px;
+   min-width: 1000px;
    overflow: auto;
    margin: auto;
 }/* sirve para la velocidad de scroleo*/
@@ -20,8 +20,10 @@ body{
 }
 
 main {
-   margin-bottom: 14px;
+   margin-bottom: 4px;
    padding-bottom: 45px;
+   padding-top: 75px;
+   clear: both;
 }
 
 h1{  
@@ -58,8 +60,9 @@ h3 {
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center;
-   margin-top: -40px;
-   margin-bottom: 0;  
+   margin-top: -10px;
+   margin-bottom: -30px;
+   padding-right: 30px;
 }
 
 /*Fin generales*/
@@ -68,27 +71,20 @@ h3 {
 
 /*Header*/
 
-.bordeheader {
-   position: sticky;
-   top: 27px;
-   z-index: 4;
-   margin-top: 0px;   
-}
 header a img {
    padding-left: 30px;
 }
 header {
-   padding: 5px;   
-   /*background-image: url("../img/header4.jpg");   
+   padding: 20px;   
+   background-image: url("../iconos/blackbottom2.png");   
    background-size: 100%;
-   background-attachment: scroll; 
-   background-position: center;*/
-   background: black; 
-   position: sticky;
-   top: -67px;
-   z-index: 3;
-   min-width: 1000px;
-   overflow: auto;  
+   background-repeat: no-repeat;     
+   position: fixed;
+   width: 100%;
+   z-index: 8;
+   min-width: 1200px;
+   max-width: 1300px;
+   overflow: auto;   
 }
 .logoheader {
    padding-bottom: 10px;
@@ -108,16 +104,17 @@ header nav ul li a {
    text-shadow: 2px 2px 5px black;
    font-family: 'Bangers', cursive;
    font-size: 27px;
-   margin-right: 20px; 
+   margin-right: 10px; 
 }
 header nav ul li {
-   display: inline-block;
-   margin-right: 6px;
+   display: inline-block;   
    position: relative;   
 }
 header nav {
    float: right;
-   margin-top: 60px;
+   margin-top: 30px;
+   margin-right: 30px;
+   position: relative;
 }
 /*Fin Header*/
 
@@ -130,8 +127,10 @@ header nav {
    background-position: left;
    background-attachment: scroll;
    background-repeat: no-repeat;
-   background-size: 45%;     
+   background-size: 600px;     
    height: 550px;
+   margin-top: 20px;
+   padding-bottom: 40px;   
 }
 .fondopro ul {
    font-family: 'Permanent Marker', cursive;
@@ -139,19 +138,27 @@ header nav {
    color: rgb(37, 35, 158);
    font-size: 22px;
    width: 350px;
-   padding-left: 150px;       
+   padding-left: 110px;       
 }
 .tituloprox {
    text-align: left;
    color: rgb(255, 215, 0);
-   padding-left: 150px;
+   padding-left: 100px;
 }
+.flexdeprox{
+   display: flex;
+   justify-content: space-around;
+}
+.fotoluna {
+   padding-top: 100px;
+}
+
 
 /*Historia*/
 .historia {
    padding-right: 20%;
    padding-left: 20%;
-   padding-top: 3%;
+   padding-top: 10px;
    width: 60%;
 }
 .parrafo {
@@ -170,7 +177,7 @@ header nav {
 /* discodrgafia*/
 
 #contenedor {
-   padding-bottom: 50px;
+   padding-bottom: 10px;
    width: 100%;
    overflow: auto;
 }
@@ -199,10 +206,11 @@ main div ul {
    display: flex;
    flex-flow: row wrap; 
    justify-content: space-around;
-   align-content: space-around;  
+   align-content: space-around;   
 }
-main div ul li {
+main .miniatura ul li {
    list-style: none;
+   padding-top: 30px;  
 }
 
 #pecados {
@@ -315,24 +323,16 @@ main form {
 
 
 /*Footer*/
-.bordefooter {   
-   position: absolute;
-   z-index: 4;
-   margin-top: -40px;
-   min-width: 1200px;
-   overflow: auto;   
-}
+
 footer {
-   /*background-image: url("../img/header.jpg");*/
-   background-color: black;
-   padding: 5px 15px 5px 0px;
+   background-image: url("../iconos/blacktop2.png");   
    background-size: 100%;
-   background-attachment: fixed;    
-   bottom: 0px;
-   z-index: 3;
+   background-repeat: no-repeat;
+   width: 100%;
+   position: relative;    
+   z-index: 5;
    min-width: 1000px;
    overflow: auto;   
-   border: 0px;
 }
 
 footer nav ul li {
@@ -340,18 +340,21 @@ footer nav ul li {
    display: inline-block;
    margin: 8px;
    z-index: 3;
-   padding-right: 25px;
+   padding-right: 25px;   
 }
 
 footer nav {
    float: right;
    padding-right: 1%;
+   clear: both;
+   padding-top: 30px;
 }
 .logofooter {
    animation-name: girar_logo;
    animation-duration: 4s;
    animation-iteration-count: infinite;
    animation-timing-function: linear;
+   padding-top: 30px;
 }
 
 @keyframes girar_logo {
