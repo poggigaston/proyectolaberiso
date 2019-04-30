@@ -8,7 +8,8 @@ html {
 }/* sirve para la velocidad de scroleo*/
 
 * {
-   margin: 0;   
+   margin: 0;
+     
 }
 
 body{
@@ -85,8 +86,8 @@ header {
    position: fixed;
    width: 100%;
    z-index: 8;
-   min-width: 1200px;
-   max-width: 1300px;      
+   /*min-width: 1200px;
+   max-width: 1300px;*/     
 }
 .logoheader {
    padding-bottom: 10px;
