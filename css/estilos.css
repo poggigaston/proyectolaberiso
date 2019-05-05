@@ -8,8 +8,7 @@ html {
 }/* sirve para la velocidad de scroleo*/
 
 * {
-   margin: 0;
-     
+   margin: 0;     
 }
 
 body{
@@ -86,8 +85,9 @@ header {
    position: fixed;
    width: 100%;
    z-index: 8;
-   /*min-width: 1200px;
-   max-width: 1300px;*/     
+   /*min-width: 1200px;*/
+   max-width: 1300px;
+   margin: auto;   
 }
 .logoheader {
    padding-bottom: 10px;
@@ -313,7 +313,8 @@ div ol li {
    padding-top: 20px;
    opacity: 0.5;
    list-style: none;
-   align-items: center; 
+   align-items: center;
+   list-style: none; 
 }
 .fotosant ul li:hover {
    opacity: 1;
@@ -323,6 +324,8 @@ div ol li {
    flex-flow: wrap;
    justify-content: space-evenly;
 }
+
+
 
 /*fin fotos y videos*/
 
@@ -421,54 +424,129 @@ footer nav {
 }
 /*Fin Footer*/
 
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
    header {
       display: flex;
-      flex-direction: column;      
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;     
+      padding-top: 10;
+      background-image: none;
       background: black;
-      background-size: 0;     
+      position: relative;
+      margin-top: 0px;
+      padding: 0px;
+   }
+   header nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0 0 0;
+   }
+   header nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0px;
+      margin: 0;           
+   }
+   .fondo {
+      Margin: 0;
+      padding: 0;
+   }
+   .flexdeprox {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;       
+   }
+   .parrafo {
+      padding: 0;
+      margin: 0;
+   }
+   .integ ,.integ2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
    }
    footer {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-image: black;
       background: black;
-      background-size: 0; 
+      min-width: 768px;
    }
-   footer ul {
-      justify-items: flex-end;
-   }
-  
-   }
-   .logofooter {
-      width: 130px;
-      height: 40px;
-      position: relative;
-   }
-
-   .fondo {
-      width: 768px;
-   }
-   .fondopro {
-      margin-top: 200px;
-   }  
-      
-   .menu {
+   footer nav ul {
       display: flex;
       flex-direction: column;
-   }  
-      
-   .flexdeprox {
-      flex-direction: column;
-      flex-flow: wrap; 
-      
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0px;
+      margin: 0;
    }
-   .integ {
+   main {
+      display: flex;
       flex-direction: column;
-      flex-flow: wrap; 
+      justify-content: space-between;
+      align-items: center;
    }
-   .integ2 {
+   main form {
+      padding-left: 30%;
+   }
+   div #pecados img, #vivounico img, #historias img, #vivogloria img, #atrapando img, #atrapando img, #culpable img, #descartando img, #solo img {
+      display: none;
+   }
+   .fotosant ul li {
+      opacity: 1;
+   }
+   .calavera {
+      display: flex;
       flex-direction: column;
-      flex-flow: wrap; 
+      justify-content: space-between;
+      padding-left: 40%;
    }
-
-}*/
+}
+@media screen and (max-width: 414px) {
+   footer {
+      min-width: 375px;
+   }
+   h2 {
+      font-size: 30px;      
+   }
+   h1 {
+      font-size: 33px;
+   }
+   .parrafo {
+      font-size: 15px;
+   }
+   .fondopro {
+      background-size: 380px;
+      width: 350px;
+      margin: 0;
+      background-position: center;
+      height: 310px;;
+   }
+   .fondopro ul {
+      width: 250px;
+      padding-left: 15%;
+      padding-top: 8%;
+      font-size: 15px;
+   }
+   .tituloprox {
+      padding: 0;
+      text-align: center;
+   }
+   .fotoluna {
+      width: 220px;
+      height: 200px;
+      padding: 0;
+   }
+   .logoheader {
+      padding: 0;
+   }
+}
