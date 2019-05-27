@@ -1,552 +1,844 @@
 /*Generales*/
 
 html {
-   scroll-behavior: smooth;
-   
-   overflow: auto;
-   margin: auto;
-}/* sirve para la velocidad de scroleo*/
+	scroll-behavior: smooth;
+
+	overflow: auto;
+	margin: auto;
+} /* sirve para la velocidad de scroleo*/
 
 * {
-   margin: 0;     
+	margin: 0;
 }
 
-body{
-   /*font-family: 'Bangers', cursive;*/
-   font-family: 'Acme', sans-serif;
-   /*font-family: 'Margarine', cursive;*/
-   font-size: 20px;
-   clear: both;  
+body {
+	/*font-family: 'Bangers', cursive;*/
+	font-family: "Acme", sans-serif;
+	/*font-family: 'Margarine', cursive;*/
+	font-size: 20px;
+	clear: both;
 }
 
 main {
-   margin-bottom: 4px;
-   padding-bottom: 45px;
-   padding-top: 75px;
-   clear: both;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 75px;
+	clear: both;
 }
 
-h1{  
-    /*font-family: 'Margarine', cursive;
+h1 {
+	/*font-family: 'Margarine', cursive;
     font-family: 'Acme', sans-serif;*/
-    font-family: 'Bangers', cursive;
-    /*font-family: 'Carter One', cursive;
+	font-family: "Bangers", cursive;
+	/*font-family: 'Carter One', cursive;
     font-family: 'Seymour One', sans-serif;
     font-family: 'Goblin One', cursive;*/
-    font-size: 55px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-    padding: 40px;
-    color: rgb(255, 215, 0);    
+	font-size: 55px;
+	text-align: center;
+	text-shadow: 2px 2px 5px black;
+	padding: 40px;
+	color: rgb(255, 215, 0);
 }
 h2 {
-   text-align: center;   
-   font-size: 50px;
-   padding: 35px;
-   padding-left: 50px;
-   padding-bottom: 40px;
-   color: rgb(248, 48, 48);
-   font-family: 'Bangers', cursive;
-   text-shadow: 2px 2px 5px black;
-
+	text-align: center;
+	font-size: 50px;
+	padding: 35px;
+	padding-left: 50px;
+	padding-bottom: 40px;
+	color: rgb(248, 48, 48);
+	font-family: "Bangers", cursive;
+	text-shadow: 2px 2px 5px black;
 }
 h3 {
-   color: rgb(114, 37, 37);
-   text-align: center;
-   text-shadow: 2px 2px 5px black;
-   font-size: 35px;
-   font-family: 'Trade Winds', cursive;
+	color: rgb(114, 37, 37);
+	text-align: center;
+	text-shadow: 2px 2px 5px black;
+	font-size: 35px;
+	font-family: "Trade Winds", cursive;
 }
 .fondo {
-   background-image: url("../img/fondonuevo2.jpg");   
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
-   margin-top: -10px;
-   margin-bottom: -30px;
-   padding-right: 30px;
+	background-image: url("../img/fondonuevo2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	padding-right: 30px;
 }
 
 /*Fin generales*/
 
-
-
 /*Header*/
 
 header a img {
-   padding-left: 30px;
+	padding-left: 30px;
 }
 header {
-   padding: 20px;   
-   background-image: url("../iconos/blackbottom2.png");   
-   background-size: 100%;
-   background-repeat: no-repeat;     
-   position: fixed;
-   width: 100%;
-   z-index: 8;
-   /*min-width: 1200px;*/
-   max-width: 1300px;
-   margin: auto;   
+	padding: 20px;
+	background-image: url("../iconos/blackbottom2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: fixed;
+	width: 100%;
+	/*min-width: 1000px;*/
+	z-index: 8;
+	margin: auto;
+	overflow: auto;
 }
 .logoheader {
-   padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 .seleccion {
-   font-size: 33px;
-   color: rgb(255, 215, 0);
-   text-decoration: none;
+	font-size: 33px;
+	color: rgb(255, 215, 0);
+	text-decoration: none;
 }
-header nav ul li :hover {   
-   color: rgb(230, 7, 7);
-   text-decoration: none;
+header nav ul li :hover {
+	color: rgb(230, 7, 7);
+	text-decoration: none;
 }
 header nav ul li a {
-   color: white;   
-   text-decoration: none;
-   text-shadow: 2px 2px 5px black;
-   font-family: 'Bangers', cursive;
-   font-size: 27px;
-   margin-right: 10px; 
+	color: white;
+	text-decoration: none;
+	text-shadow: 2px 2px 5px black;
+	font-family: "Bangers", cursive;
+	font-size: 27px;
+	margin-right: 10px;
 }
 header nav ul li {
-   display: inline-block;   
-   position: relative;   
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
 }
 header nav {
-   float: right;
-   margin-top: 30px;
-   margin-right: 30px;
-   position: relative;
+	float: right;
+	margin-top: -50px;
+	margin-right: 30px;
+	position: relative;
+}
+
+#mobile {
+	display: none;
+}
+#mobile2 {
+	display: none;
 }
 /*Fin Header*/
-
-
 
 /*Inicio*/
 
 .fondopro {
-   background-image: url("../iconos/shabby-paper-3350613_960_720.png");
-   background-position: left;
-   background-attachment: scroll;
-   background-repeat: no-repeat;
-   background-size: 600px;     
-   height: 550px;
-   margin-top: 20px;
-   padding-bottom: 40px;   
+	background-image: url("../iconos/shabby-paper-3350613_960_720.png");
+	background-position: left;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: 600px;
+	height: 550px;
+	margin-top: 20px;
+	padding-bottom: 40px;
 }
 .fondopro ul {
-   font-family: 'Permanent Marker', cursive;
-   text-align: center;
-   color: rgb(37, 35, 158);
-   font-size: 22px;
-   width: 380px;
-   padding-left: 130px;       
+	font-family: "Permanent Marker", cursive;
+	text-align: center;
+	color: rgb(37, 35, 158);
+	font-size: 20px;
+	width: 450px;
+	height: 300px;
+	padding-left: 130px;
 }
 .tituloprox {
-   text-align: left;
-   color: rgb(255, 215, 0);
-   padding-left: 100px;
-   animation-name: resaltar_titulo;
-   animation-duration: 2s;
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
+	text-align: left;
+	color: rgb(255, 215, 0);
+	padding-left: 100px;
+	animation-name: resaltar_titulo;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
-.flexdeprox{
-   display: flex;
-   justify-content: space-around;   
+.flexdeprox {
+	display: flex;
+	justify-content: space-around;
 }
 .fotoluna {
-   padding-top: 100px;
+	padding-top: 100px;
 }
 .integ {
-   display: flex;
-   justify-content: space-around;
-   padding: 30px;
-   font-family: 'Bangers', cursive;
-   color: rgb(248, 48, 48);
-   text-shadow: 2px 2px 5px black;
-   text-align: center;
-   font-size: 30px;
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+	font-family: "Bangers", cursive;
+	color: rgb(248, 48, 48);
+	text-shadow: 2px 2px 5px black;
+	text-align: center;
+	font-size: 30px;
 }
 .integ2 {
-   display: flex;
-   justify-content: space-around;
-   padding: 20px;
-   font-family: 'Bangers', cursive;
-   color: rgb(248, 48, 48);
-   text-shadow: 2px 2px 5px black;
-   text-align: center;
-   font-size: 30px;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+	font-family: "Bangers", cursive;
+	color: rgb(248, 48, 48);
+	text-shadow: 2px 2px 5px black;
+	text-align: center;
+	font-size: 30px;
 }
-
 
 /*Historia*/
 .historia {
-   padding-right: 20%;
-   padding-left: 20%;
-   padding-top: 10px;
-   width: 60%;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-top: 10px;
 }
 .parrafo {
-   font-family: 'IBM Plex Mono', monospace;
-   width: 80%;
-   text-align: left;
-   text-justify: auto;  
-   padding: 20px;
-   margin-left: 80px;
-   color: rgb(226, 98, 102);
-   
+	font-family: "IBM Plex Mono", monospace;
+	width: 80%;
+	text-align: left;
+	text-justify: auto;
+	padding: 20px;
+	margin-left: 80px;
+	color: rgb(226, 98, 102);
 }
 /*Fin historia*/
-
 
 /* discodrgafia*/
 
 #contenedor {
-   padding-bottom: 10px;
-   width: 100%;
-   overflow: auto;
+	padding-bottom: 10px;
+	width: 100%;
+	overflow: auto;
 }
-.subir {    
-   color: rgb(255, 215, 0);   
-   display: inline-block;   
-   background: rgb(67, 67, 83);
-   position: fixed;
-   right: 33%;   
-   top:600px;   
-   z-index: 7;
-   border-radius: 20px;   
+.subir {
+	color: rgb(255, 215, 0);
+	display: inline-block;
+	background: rgb(67, 67, 83);
+	position: fixed;
+	right: 33%;
+	top: 590px;
+	z-index: 7;
+	border-radius: 20px;
 }
-main div ul li a {  
-   opacity: 0.5;
-   filter: grayscale(1);   
-   padding: 10px; 
+main div ul li a {
+	opacity: 0.5;
+	filter: grayscale(1);
+	padding: 10px;
 }
 main div ul li a:hover {
-   opacity: 0.8;
-   filter: grayscale(0);    
+	opacity: 0.8;
+	filter: grayscale(0);
 }
-main div ul {   
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-around;
-   align-content: space-around;   
+main div ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
 }
 main .miniatura ul li {
-   list-style: none;
-   padding-top: 30px;  
+	list-style: none;
+	padding-top: 30px;
 }
 #pecados {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 #vivounico {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;   
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 #historias {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 #vivogloria {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 #atrapando {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 #culpable {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;   
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 #descartando {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 #solo {
-   display: flex;
-   flex-flow: row wrap; 
-   justify-content: space-evenly;
-   align-content: space-around;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
 }
 
 div ol li {
-   text-align: center;
-   color: rgb(219, 43, 48);
-   text-shadow: 2px 2px 5px black;
-   display: flex;
-   flex-flow: column wrap;   
+	text-align: center;
+	color: rgb(219, 43, 48);
+	text-shadow: 2px 2px 5px black;
+	display: flex;
+	flex-flow: column wrap;
 }
 
 /* fin discodrgafia*/
 
-
 /*Fotos y videos*/
 
 .calavera {
-   padding-left: 45%;
-   padding-top: 30px;
+	padding-left: 45%;
+	padding-top: 30px;
 }
 .fotosant ul {
-   display: flex;
-   flex-flow: wrap;
-   justify-content: space-evenly;
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/*grid-template-rows: repeat(6, 1fr);*/
+	grid-template-areas:
+		"uno uno dos dos"
+		"tres cuatro cinco cinco"
+		"seis seis siete ocho"
+		"nueve diez diez once"
+		"doce doce trece catorce"
+		"quince dieciseis diecisiete diecisiete";
+	grid-gap: 0px;
+	padding: 5%;
 }
 .fotosant ul li {
-   padding: 10px;
-   padding-top: 20px;
-   opacity: 0.5;
-   list-style: none;
-   align-items: center;
-   list-style: none; 
+	list-style: none;
+	opacity: 0.5;
+	transition: opacity 0.5s;
+	border: 2px solid rgb(248, 244, 244);
+}
+.fotosant ul .uno {
+	grid-area: uno;
+	background: url("../img/ant/LABERISO_OBRAS_17JUNIO.jpg");
+	background-size: cover;
+	background-position: center;
+	/*width: 400px;*/
+	height: 300px;
+}
+.fotosant ul .dos {
+	grid-area: dos;
+	background: url("../img/ant/LABERISO_OBRAS_17JUNIO\ \(2\).jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .tres {
+	grid-area: tres;
+	background: url("../img/ant/LABERISO_OBRAS_17JUNIO\ \(3\).jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .cuatro {
+	grid-area: cuatro;
+	background: url("../img/ant/LABERISO_OBRAS_17JUNIO\ \(4\).jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .cinco {
+	grid-area: cinco;
+	background: url("../img/ant/LABERISO_OBRAS_17JUNIO\ \(5\).jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .seis {
+	grid-area: seis;
+	background: url("../img/ant/LABERISO_OBRAS_17JUNIO\ \(6\).jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .siete {
+	grid-area: siete;
+	background: url("../img/ant/LABERISO_RIVER_2016_xGALLOBLUGUERMANN-1.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .ocho {
+	grid-area: ocho;
+	background: url("../img/ant/LABERISO_RIVER_2016_xGALLOBLUGUERMANN-16.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .nueve {
+	grid-area: nueve;
+	background: url("../img/ant/LABERISO_RIVER_2016_xGALLOBLUGUERMANN-23.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .diez {
+	grid-area: diez;
+	background: url("../img/ant/LABERISO_RIVER_2016_xGALLOBLUGUERMANN-3.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .once {
+	grid-area: once;
+	background: url("../img/ant/LABERISO_RIVER_2016_xGALLOBLUGUERMANN-31.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .doce {
+	grid-area: doce;
+	background: url("../img/ant/LABERISO_RIVER_2016_xGALLOBLUGUERMANN-5.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .trece {
+	grid-area: trece;
+	background: url("../img/ant/LABERISO_RIVER_2016_xGALLOBLUGUERMANN-8.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .catorce {
+	grid-area: catorce;
+	background: url("../img/ant/LABERISO_TANDIL1.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .quince {
+	grid-area: quince;
+	background: url("../img/ant/LABERISO_TANDIL2.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .dieciseis {
+	grid-area: dieciseis;
+	background: url("../img/ant/LABERISO_TANDIL3.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+}
+.fotosant ul .diecisiete {
+	grid-area: diecisiete;
+	background: url("../img/ant/LABERISO_TANDIL4.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 300px;
 }
 .fotosant ul li:hover {
-   opacity: 1;
+	opacity: 1;
 }
 .videos ul {
-   display: flex;
-   flex-flow: wrap;
-   justify-content: space-evenly;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-evenly;
 }
-
-
 
 /*fin fotos y videos*/
 
-
 /* Contacto*/
 
-.fcont {
-   font-size: 30px;
-   color: rgb(248, 48, 48);
-   font-family: 'Bangers', cursive;
-   display: block;   
-   padding-top: 18px;
-   text-shadow: 2px 2px 5px black;
+#fcont {
+	font-size: 25px;
+	color: rgb(248, 48, 48);
+	font-family: "Bangers", cursive;
+	display: block;
+	padding-top: 18px;
+	text-shadow: 2px 2px 5px black;
 }
-.formulario {
-   padding-bottom: 50px;
+#formulario {
+	padding-bottom: 50px;
 }
-main form {
-   display: block;
-   padding-left: 40%;
+#formular {
+	display: block;
+	padding-left: 40%;
 }
 
 /*Fin Contacto*/
 
-
 /*Footer*/
 
 footer {
-   background-image: url("../iconos/blacktop2.png");   
-   background-size: 100%;
-   background-repeat: no-repeat;
-   width: 100%;
-   position: relative;    
-   z-index: 5;
-   min-width: 1000px;
-   overflow: auto;   
+	background-image: url("../iconos/blacktop2.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	z-index: 9;
+	margin: -30px 0;
+	/*min-width: 1000px;*/
+	overflow: auto;
 }
 
 footer nav ul li {
-   list-style: none;
-   display: inline-block;
-   margin: 8px;
-   z-index: 3;
-   padding-right: 25px;   
+	list-style: none;
+	display: inline-block;
+	margin: 8px;
+	z-index: 3;
+	padding-right: 25px;
 }
 
 footer nav {
-   float: right;
-   padding-right: 1%;
-   clear: both;
-   padding-top: 30px;
+	float: right;
+	padding-right: 1%;
+	clear: both;
+	padding-top: 30px;
 }
 .logofooter {
-   animation-name: girar_logo;
-   animation-duration: 4s;
-   animation-iteration-count: infinite;
-   animation-timing-function: linear;
-   padding-top: 30px;
+	animation-name: girar_logo;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	padding-top: 30px;
 }
 
 @keyframes girar_logo {
-   0% {
-      transform: rotateY(0deg);
-      
-   }
-   20% {
-      transform: rotateY(72deg);
-   }
-   40% {
-      transform: rotateY(144deg);
-   }
-   60% {
-      transform: rotateY(216deg);
-      filter: grayscale(1); 
-   }
-   80% {
-      transform: rotateY(288deg);
-      filter: grayscale(1);      
-   }   
-   100% {
-      transform: rotateY(360deg);         
-   }
+	0% {
+		transform: rotateY(0deg);
+	}
+	20% {
+		transform: rotateY(72deg);
+	}
+	40% {
+		transform: rotateY(144deg);
+	}
+	60% {
+		transform: rotateY(216deg);
+		filter: grayscale(1);
+	}
+	80% {
+		transform: rotateY(288deg);
+		filter: grayscale(1);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
 @keyframes resaltar_titulo {
-   0% {
-      text-shadow: 2px 2px 5px black;
-   }   
-  
-   50% {
-      text-shadow: 10px 10px 15px rgb(245, 13, 13);
-   }
-    
-   100% {
-      text-shadow: 2px 2px 5px black;     
-   } 
+	0% {
+		text-shadow: 2px 2px 5px black;
+	}
+
+	50% {
+		text-shadow: 10px 10px 15px rgb(245, 13, 13);
+	}
+
+	100% {
+		text-shadow: 2px 2px 5px black;
+	}
 }
 /*Fin Footer*/
 
 @media screen and (max-width: 768px) {
-   header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;     
-      padding-top: 10;
-      background-image: none;
-      background: black;
-      position: relative;
-      margin-top: 0px;
-      padding: 0px;
-   }
-   header nav ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 0 0 0;
-   }
-   header nav {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 0px;
-      margin: 0;           
-   }
-   .fondo {
-      Margin: 0;
-      padding: 0;
-   }
-   .flexdeprox {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;       
-   }
-   .parrafo {
-      padding: 0;
-      margin: 0;
-   }
-   .integ ,.integ2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-   }
-   footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      background-image: black;
-      background: black;
-      min-width: 768px;
-   }
-   footer nav ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding-top: 0px;
-      margin: 0;
-   }
-   main {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-   }
-   main form {
-      padding-left: 30%;
-   }
-   div #pecados img, #vivounico img, #historias img, #vivogloria img, #atrapando img, #atrapando img, #culpable img, #descartando img, #solo img {
-      display: none;
-   }
-   .fotosant ul li {
-      opacity: 1;
-   }
-   .calavera {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-left: 40%;
-   }
+	header {
+		display: block;
+		background: black;
+		margin-top: 0px;
+		padding: 0px;
+		max-width: 768px;
+	}
+	header nav {
+		position: fixed;
+		left: -100%;
+		top: -100%;
+		width: 100%;
+		height: 100%;
+
+		transition: all 0.5s;
+	}
+	.logoheader {
+		width: 250px;
+		display: block;
+		position: relative;
+		float: right;
+		margin-right: 10px;
+	}
+	#mobile {
+		display: block;
+		padding: 10px;
+		color: rgb(201, 8, 8);
+	}
+	#mobile2 {
+		display: block;
+		position: fixed;
+		left: 80%;
+		top: 10%;
+		float: right;
+		color: rgb(134, 4, 4);
+		z-index: 15;
+	}
+
+	header nav ul {
+		display: flex;
+		flex-direction: column;
+		left: 0;
+		top: 5%;
+		width: 768px;
+		background: grey;
+		padding: 30px;
+		transition: all 0.5s;
+	}
+	header i {
+		font-size: 40px;
+	}
+	header nav i {
+		font-size: 30px;
+	}
+	header nav ul li {
+		margin: 10px 0;
+	}
+	header nav ul li a {
+		font-size: 35px;
+	}
+
+	.fondo {
+		margin: 0;
+		padding: 0;
+		padding-top: 75px;
+	}
+	.flexdeprox {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.parrafo {
+		padding: 0;
+		margin: 0;
+	}
+	.integ,
+	.integ2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#formular {
+		display: block;
+		padding-left: 5%;
+	}
+	.subir {
+		display: none;
+	}
+	footer {
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-image: black;
+		background: black;
+		max-width: 768px;
+		padding-right: 15px;
+	}
+	.logofooter {
+		padding-top: 5px;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	main form {
+		padding-left: 10px;
+	}
+	div #pecados img,
+	#vivounico img,
+	#historias img,
+	#vivogloria img,
+	#atrapando img,
+	#atrapando img,
+	#culpable img,
+	#descartando img,
+	#solo img {
+		display: none;
+	}
+	.fotosant ul li {
+		opacity: 1;
+	}
+	.calavera {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10%;
+	}
+	footer nav {
+		padding: 5px;
+	}
+	.pie {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 667px) {
+	header {
+		line-height: 1;
+		min-width: 667px;
+	}
+	footer {
+		display: block;
+	}
 }
 @media screen and (max-width: 414px) {
-   footer {
-      min-width: 375px;
-   }
-   h2 {
-      font-size: 30px;      
-   }
-   h1 {
-      font-size: 33px;
-   }
-   .parrafo {
-      font-size: 15px;
-   }
-   .fondopro {
-      background-size: 380px;
-      width: 350px;
-      margin: 0;
-      background-position: center;
-      height: 310px;;
-   }
-   .fondopro ul {
-      width: 250px;
-      padding-left: 15%;
-      padding-top: 8%;
-      font-size: 15px;
-   }
-   .tituloprox {
-      padding: 0;
-      text-align: center;
-   }
-   .fotoluna {
-      width: 220px;
-      height: 200px;
-      padding: 0;
-   }
-   .logoheader {
-      padding: 0;
-   }
+	header {
+		line-height: 1;
+		min-width: 375px;
+	}
+	#mobile {
+		display: block;
+		padding: 10px;
+		color: rgb(201, 8, 8);
+		z-index: 15;
+	}
+	#mobile2 {
+		display: block;
+		position: fixed;
+		right: 5%;
+		top: 15%;
+		float: right;
+		color: rgb(134, 4, 4);
+		z-index: 15;
+	}
+	.logoheader {
+		width: 180px;
+		display: block;
+		position: relative;
+		float: right;
+		margin-right: 10px;
+	}
+	header nav {
+		position: fixed;
+		left: -100%;
+		top: -100%;
+		width: 100%;
+		transition: all 0.5s;
+		z-index: 15;
+	}
+	header nav ul {
+		left: 0;
+		top: 10%;
+		width: 100%;
+		background: grey;
+		padding: 30px;
+		transition: all 0.5s;
+		z-index: 15;
+	}
+	header i {
+		font-size: 40px;
+	}
+	header nav i {
+		font-size: 40px;
+	}
+	header nav ul li {
+		margin: 20px 0;
+	}
+	header nav ul li a {
+		font-size: 30px;
+	}
+	footer {
+		min-width: 375px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h1 {
+		font-size: 33px;
+	}
+	.fondo {
+		background: url("../img/fondonuevo2cel.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		padding-top: 75px;
+	}
+	.historia {
+		width: 300px;
+		padding: 0;
+	}
+	.subir {
+		display: none;
+	}
+	.parrafo {
+		font-size: 15px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.fondopro {
+		background-size: 380px;
+		width: 350px;
+		margin: 0;
+		background-position: center;
+		height: 310px;
+	}
+	.fondopro ul {
+		width: 320px;
+		height: min-content;
+		padding-left: 20%;
+		padding-top: 0%;
+		/* padding-bottom: 40px; */
+		font-size: 15px;
+	}
+	.tituloprox {
+		padding: 0;
+		text-align: center;
+	}
+	#fcont {
+		font-size: 20px;
+		color: rgb(248, 48, 48);
+		font-family: "Bangers", cursive;
+		display: block;
+		padding-top: 18px;
+		text-shadow: 2px 2px 5px black;
+	}
+	#formulario {
+		padding-bottom: 30px;
+	}
+	#formular {
+		display: block;
+		padding-left: 5%;
+	}
+	.fotosant ul {
+		opacity: 1;
+		display: block;
+		padding: 0;
+	}
+	.videos {
+		display: none;
+	}
+	.fotoluna {
+		width: 220px;
+		height: 200px;
+		padding: 0;
+	}
+	.logoheader {
+		padding: 0;
+	}
+	.pie {
+		padding: 0;
+	}
+	footer {
+		display: inline-flex;
+	}
+	footer nav {
+		padding: 5px;
+	}
 }

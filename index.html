@@ -5,29 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Beriso -No Oficial-</title>        
         <link href="https://fonts.googleapis.com/css?family=Acme|Bangers|Carter+One|Goblin+One|Margarine|Seymour+One" rel="stylesheet">  
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/estilos.css">
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
     </head>
     
     <!--Encabezado-->
 
     <body>
         <header class="sticky">
-            <a href="#"><img src="img/logo.png" alt="logo" width="300" class="logoheader"></a>
+            
+            <a href="#">
+                <h4>
+                    <img src="img/logo.png" alt="logo" width="300" class="logoheader">
+                </h4>
+            </a>
+            <i class="fas fa-bars" id= "mobile"></i>
 
-            <nav><ul class="menu">
-                    <li><a href="index.html" class="seleccion">Inicio</a></li>
-                    <li><a href="hist/hist.html">Historia</a></li>
-                    <li><a href="disc/disc.html">Discografia</a></li>
-                    <li><a href="event/event.html">Fotos&videos</a></li>                  
-                    <li><a href="cont/contacto.html">Contacto</a></li>
+            <nav>
+                <!--<i class="fas fa-times" id= "mobile2"></i>-->
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#discografia">Discografia</a></li>
+                    <li><a href="#fotos">Fotos&videos</a></li>                  
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>           
         </header>
         
 
-        <!--Sector Principal-->
+        <!--Inicio-->
 
         <main class="fondo">
             <div class="flexdeprox">
@@ -46,43 +56,321 @@
             
             <div class="integ">
                 <div>                
-                    <div>Rolo Sartorio (Cantante)</div>
+                    <!--<div>Rolo Sartorio (Cantante)</div>-->
                     <img src="integrantes/rolo.jpg" width="300" alt="Rolo">
+                    <p>
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>Cantante</h4>   
+                        </button>                      
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Rolo Sartorio
+                        </div>
+                    </div>
                 </div>
                 
                 <div>                
-                    <div>Pablo Puntoriero (Aires)</div>
+                    <!--<div>Pablo Puntoriero (Aires)</div>-->
                     <img src="integrantes/Pablo Puntoriero.jpg" width="200" alt="Pablo">
+                    <p>
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>Aires</h4>   
+                        </button>                      
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            Pablo Puntoriero
+                        </div>
+                    </div>
                 </div>
 
                 <div>                
-                    <div>Pablo Ferradas (Guitarra)</div>
+                    <!--<div>Pablo Ferradas (Guitarra)</div>-->
                     <img src="integrantes/Pablo ferradas.jpg" width="200" alt="Pablof">
+                    <p>
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>Guitarra</h4>   
+                        </button>                      
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                        Pablo Ferradas
+                        </div>
+                    </div>
                 </div>
 
                 <div>                
-                    <div>Javier Pandolfi (Bateria)</div>
+                    <!--<div>Javier Pandolfi (Bateria)</div>-->
                     <img src="integrantes/Javier Pandolfi.jpg" width="200" alt="Javi">
+                    <p>
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>Baterista</h4>   
+                      </button>                      
+                    </p>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                          Javier Pandolfi
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="integ2">    
                 <div>                
-                    <div>Ezequiel Bolli (Bajo)</div>
+                    <!--<div>Ezequiel Bolli (Bajo)</div>-->
                     <img src="integrantes/Ezequiel Bolli.jpg" width="200" alt="Eze">
+                    <p>
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>Bajo</h4>   
+                        </button>                      
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            Ezequiel Bolli
+                        </div>
+                    </div>
                 </div>
 
                 <div>                
-                    <div>Emiliano Mansilla (Guitarra)</div>
+                    <!--<div>Emiliano Mansilla (Guitarra)</div>-->
                     <img src="integrantes/Emiliano mansilla.jpg" width="200" alt="Emi">
+                    <p>
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>Guitarra</h4>   
+                        </button>                      
+                    </p>
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            Emiliano Mansilla
+                        </div>
+                    </div>
                 </div>
 
                 <div>                
-                    <div>Conde Kung (Teclado)</div>
+                    <!--<div>Conde Kung (Teclado)</div>-->
                     <img src="integrantes/Conde Kung.jpg" width="200" alt="Conde">
+                    <p>
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+                            <h4>Teclado</h4>   
+                        </button>                      
+                    </p>
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                            Conde Kung
+                        </div>
+                    </div>
                 </div>
             </div>
+
+             <!--Historia-->
+
+            <h1 id="historia">Historia</h1>
+            <div>
+                <img src="img/berisotodos2.jpg" alt="Beriso banda completa" width="1200" class="historia">
+            </div>
+            <p class="parrafo">La agrupación se formó en 1998 y lentamente fueron aumentando su convocatoria. Sus composiciones tratan sobre los mismos temas comunes de todas las bandas de rock barrial con las que, además, comparte similitudes musicales: amor y desamor, alguna denuncia o crítica a la corrupción política (siempre en un sentido muy genérico y evitando tomar posturas muy definidas), y anécdotas de vida y descripciones de la realidad social de los sectores socioculturales más relegados de los grandes centros urbanos. 
+            Participaron de varios festivales como el Federación Rock en Entre Ríos y en el Bombardeo del Demo en 2005.<br> 
+            La presentación oficial de su cuarto disco, Atrapando sueños, fue en el Teatro Flores de Buenos Aires, en noviembre de 2011. Durante la gira "Atrapando sueños" en 2012 La Beriso realizó dos funciones en el Teatro Flores y recorrieron el país. El 13 de octubre de 2012, en el marco de esa gira, realizaron su primer microestadio de Argentino de Quilmes, llenando su capacidad.
+            En 2013, la banda arranco con una gira por la costa atlántica en enero y en febrero agotó Auditorio Sur y CCP de Luján. Ese año la banda firmó contrato con Sony Music Entertainment Argentina S.A., con quienes en noviembre llenaron por primera vez al mítico estadio cubierto Luna Park, y grabando un álbum DVD titulado Vivo por la gloria, debutó en el segundo puesto de la lista de CAPIF en Argentina. 
+            Participaron en el Cosquín Rock en sus ediciones 2014, 2015 , 2016 y 2017.<br>
+            El 22 de marzo de 2014 , tocaron en el Microestadio Malvinas Argentinas, llenándolo completamente. Ese mismo año salieron del país para hacer un recital en Montevideo, Uruguay. 
+            El 18 de agosto de 2014 se lanzó «No me olvides», el primer sencillo de su álbum Historias.  El 3 de octubre de 2014 fue la presentación oficial de su disco Historias en el Teatro Vorterix. El 5 de octubre de 2014 salió oficialmente el disco a la venta para el público. Finalmente, el álbum recibió certificación de disco de oro por la CAPIF, por la venta de 20 000 copias. El 18 de octubre de 2014 presentó su disco tocando por primera vez junto con VilySDoo en Club Brown en Rosario. 
+            El 16 de mayo de 2015, presentaron nuevamente su disco Historias pero esta vez en el Estadio Malvinas Argentinas al aire libre, ante 15 000 personas. <br>
+            En octubre del mismo año, realizaron una gira por el país, recorriendo varias provincias como Santa Fe y Salta y todo el sur argentino. Despidieron el año el 12 de diciembre de 2015 en el Estadio Único de la Plata, siendo este el show más grande de la historia de La Beriso, al cual concurrieron más de 40 000 personas. Se realizó, además, la grabación del DVD del álbum Historias. 
+            El 19 de diciembre de 2015 se presentaron por primera vez en Chile.<br> 
+            El 1 de febrero de 2016 el Turco Bignone confirmó la participación de la banda, como soporte de los Rolling Stones en los recitales del 7, 10 y 13 de febrero en La Plata. 
+            </p>
+
+             <!--Discografia-->
+            
+            
+            <h1 id="discografia">Discografia</h1>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="bd-example col-md-5">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="#pecados"><img src="img/tapa-434x400-1.jpg" class="d-block w-40 img-fluid rounded" alt="Responsive image"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#vivounico"><img src="img/la-beriso-en-vivo-en-el-estadio-unico.jpg" alt="Responsive image" class="d-block w-40 img-fluid rounded"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#historias"><img src="img/la-beriso-historias.jpg" alt="Responsive image" class="d-block w-40 img-fluid rounded"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#vivogloria"><img src="img/la-beriso-vivo-por-la-gloria-1.jpg" alt="Responsive image" class="d-block w-40 img-fluid rounded"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#atrapando"><img src="img/la-beriso-atrapando-sueños.jpg" alt="Responsive image" class="d-block w-40 img-fluid rounded"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#culpable"><img src="img/la-beriso-culpable.jpg" alt="Responsive image" class="d-block w-40 img-fluid rounded"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#descartando"><img src="img/la-beriso-desrcatando-miserias.jpg" alt="Responsive image" class="d-block w-40 img-fluid rounded"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#solo"><img src="img/la-beriso-solo-canciones.jpg" alt="Responsive image" class="d-block w-40 img-fluid rounded"></a>
+                            </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>    
+                </div>
+            </div>         
+           
+            <div id="contenedor">
+                <h1>Discos</h1>
+
+                <h2>Pecados Capitales</h2>
+
+                <div id="pecados">                    
+                    <img src="img/tapa-434x400-1.jpg" alt="Pecados Capitales" width="450" height="430">
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A3SBFhUZkLnK5cqbKg6bn79" width="350" height="430" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>
+                </div>             
+
+                <h2>Vivo estadio unico</h2>
+
+                <div id="vivounico">                   
+                    <img src="img/la-beriso-en-vivo-en-el-estadio-unico.jpg" alt="Vivo estadio unico" width="400" height="450">
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A7GYnlBfQuUjK8ArBRMtYxp" width="350" height="450" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>
+                </div>               
+                
+                <h2>Historias</h2>
+
+                <div id="historias">
+                    <img src="img/la-beriso-historias.jpg" alt="Historias" width="400" height="380">
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A7J8jOyFxNFXYMP5xBue3og" width="350" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>
+                </div>                
+                
+                <h2>Vivo por la gloria</h2>
+
+                <div id="vivogloria">
+                    <img src="img/la-beriso-vivo-por-la-gloria-1.jpg" alt="Vivo por la gloria" width="400" height="480">                
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A41DdpG119smsggE2YZ1wSq" width="350" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>
+                </div>
+                               
+                <h2>Atrapando sueños</h2>
+
+                <div id="atrapando">
+                    <img src="img/la-beriso-atrapando-sueños.jpg" alt="Atrapando sueños" width="400" height="350">                
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A2ooQFmy8eVCQaGTG6hxqpt" width="350" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>
+                </div>
+                
+                <a href="#" class="subir"><img src="iconos/flecha_hacia_arriba.png" alt="subir" width="30"></a>           
+                
+                <h2>Culpable</h2>
+
+                <div id="culpable">               
+                    <img src="img/la-beriso-culpable.jpg" alt="Culpable" width="400" height="427">                
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A7c2ofFSc0pbgTXqAj2Jo1X" width="350" height="430" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>
+                </div>              
+                
+                <h2>Descartando miserias</h2>
+
+                <div id="descartando">
+                    <img src="img/la-beriso-desrcatando-miserias.jpg" alt="Descartando miserias" width="400" height="400">                
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A76ujJCLj9IQNkqjOB6fCxH" width="350" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>
+                </div>               
+                
+                <h2>Solo canciones</h2>
+
+                <div id="solo">
+                    <img src="img/la-beriso-solo-canciones.jpg" alt="Solo canciones" width="400" height="400">
+                    <aside><iframe src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A00VDEYTD8DyCBviKg3u04p" width="350" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></aside>              
+                </div>                              
+            </div>
+
+             <!--Fotos y videos-->
+
+            <div class="fotosyvideos">
+                <h1 id="fotos">Eventos anteriores</h1>
+                <section class="fotosant">
+                    <h3>Obras River y Tandil</h3>
+                    <ul>
+                        <li class="uno"></li>
+                        <li class="dos"></li>
+                        <li class="tres"></li>
+                        <li class="cuatro"></li>
+                        <li class="cinco"></li>
+                        <li class="seis"></li>
+                        <li class="siete"></li>
+                        <li class="ocho"></li>
+                        <li class="nueve"></li>
+                        <li class="diez"></li>
+                        <li class="once"></li>
+                        <li class="doce"></li>
+                        <li class="trece"></li>
+                        <li class="catorce"></li>
+                        <li class="quince"></li>
+                        <li class="dieciseis"></li>
+                        <li class="diecisiete"></li>
+                    </ul>            
+                </section>
+
+                <section class="videos"><h1>Videos</h1>          
+                    <ul>
+                        <li><iframe src="https://player.vimeo.com/video/135763229" width="600" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></li>
+                        <li><iframe src="https://player.vimeo.com/video/135573230" width="600" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></li>                               
+                        <li><iframe src="https://player.vimeo.com/video/274668697" width="600" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></li>
+                        <li><iframe src="https://player.vimeo.com/video/89052080" width="600" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe></li>                
+                    </ul>                   
+                </section>
+                <nav class="calavera">
+                    <a href="https://www.youtube.com/user/laberisoTV" target="_blank"><img src="img/Calavera.png" alt="Calavera mas videos" width="150">                 
+                    </a>
+                    <p>Click para canal de videos</p>
+                           
+                </nav>
+            </div>
+
+            <!--Contacto-->
+
+            <H1 id="contacto">Contacto y Contrataciones</H1>
+            <form action="#" method="get" id="formular">
+                                                             
+            <div id="formulario">
+                <div id="fcont"><label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre"placeholder="Ingresa tu nombre" required/></div>
+                
+                       
+                <div id="fcont"><label for="mail">Email:</label>
+                    <input type="email" name="correo" placeholder="ejemplo@gmail.com" required/></div>                       
+                
+                                      
+                <div id="fcont"><label for="asunto" >Asunto:</label>
+                    <select name="asunto">
+                        <option value="comentario">Comentario</option>
+                        <option value="contrataciones">Contrataciones</option>   
+                    </select></div>
+                
+
+                <div id="fcont">Escriba aqui:</div>   
+                    <textarea rows="4" cols="25">                       
+                    </textarea> 
+                <div><input type="submit" value="Enviar formulario"/>
+                    <input type="reset" value="Limpiar formulario"/></div>
+                
+                <div id="fcont"><label >
+                    <input type="checkbox" name="acepta" checked >Deseo recibir informacion
+                    </label>
+                </div>
+            </div>                                          
+            </form>
         </main>
 
+        
+        
         <!--Pie de pagina-->
         
         <footer>            
@@ -100,4 +388,9 @@
                     </ul>
                 </nav>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
